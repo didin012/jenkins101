@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'devopsjourney1/myjenkinsagents'
+            label 'docker-agent-python'
             }
       }
     stages {
