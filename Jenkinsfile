@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                apt install pipx
+                pip install pipx
                 pipx install radian
                 cd myapp
                 pip3 install -r requirements.txt
