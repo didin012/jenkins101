@@ -12,8 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                pip install pipx
-                pipx install radian
+                rm /usr/python3.11/EXTERNALLY-MANAGED
                 cd myapp
                 pip3 install -r requirements.txt
                 '''
