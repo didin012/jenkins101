@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
                 cd myapp
                 pip3 install -r requirements.txt
                 '''
